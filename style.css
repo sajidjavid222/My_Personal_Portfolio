@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Space+Mono&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar {
+    color: aliceblue;
+    font-family: "Dongle", sans-serif;
+    background-color: rgb(0, 0, 0);
+    width: 15vw;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav ul li {
+    font-weight: bold;
+    list-style: none;
+    font-size: 26px;
+    padding: 34px 0px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    background-color: rgb(36, 36, 36);
+    width: 85vw;
+}
+
+.container {
+    display: flex;
+}
+
+.InfoContainer {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    margin: 65px 65px;
+    width: 70vm;
+    height: 70vh;
+    justify-content: space-around;
+    display: flex;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 20px;
+}
+
+.devPic img {
+    height: 70vh;
+    animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim1 {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.hello {
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    animation: 4s ease 0s infinite normal none running mymove;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 230px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.name {
+    font-size: 45px;
+    padding: 20px 30px 10px;
+    animation: myAnim2 1s ease 0s 1 normal forwards;
+    font-family: cursive;
+    position: relative;
+    align-self: flex-start;
+}
+
+@keyframes myAnim2 {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.about {
+    margin: 10px;
+    font-family: "Amaranth", sans-serif;
+    padding: 10px;
+    font-size: 2px;
+    position: relative;
+}
+
+.about span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 5s infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes flip {
+    0%,
+    80% {
+        transform: rotateY(360deg);
+    }
+}
+
+.buttons button {
+    margin: 10px;
+    font-family: "Space Mono", monospace;
+    padding: 10px;
+    animation: myAnim3 1s ease 0s 1 normal forwards;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgb(9, 133, 250);
+    color: #fff;
+}
+
+@keyframes myAnim3 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.moreabout {
+    position: relative;
+    padding: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contactform {
+    padding: 0px 298px;
+    padding-top: 60px;
+    font-family: "Dongle", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contactform h1 {
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: 1px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-decoration-color: rgb(0, 0, 0);
+    position: relative;
+    animation: 2s ease 0s infinite normal none running mymove4;
+}
+
+@keyframes mymove4 {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 30px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.contactform form div {
+    padding: 3px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    border-radius: 5px;
+    margin: 3px 0px;
+    padding: 3px;
+}
+
+.form-text {
+    font-size: 20px;
+}
+
+form {
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 20px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    margin-right: 10px;
+    width: 17px;
+    margin-bottom: 5px;
+}
+
+.intro {
+    margin-left: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.intro h2 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-decoration: underline;
+    color: rgb(128, 38, 38);
+}
+
+.intro h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-decoration: underline;
+}
+
+.skills li {
+    display: inline;
+}
+
+.intro {
+    margin: 50px;
+    padding: 80px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 20px;
+}
+
+.main h1 {
+    margin-top: 55px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: double;
+}
+
+.intro_h {
+    position: relative;
+    animation: 5s ease 0s infinite normal none running mymove5;
+    color: rgb(128, 38, 38);
+}
+
+@keyframes mymove5 {
+    0% {
+        left: -350px;
+    }
+    50% {
+        left: 340px;
+    }
+    100% {
+        left: -350px;
+    }
+}
+
+.intro_c {
+    line-height: 1.6;
+}
+
+
+/* .skills ul {
+    background-color: blue;
+} */
+
+.skills ul li {
+    background-color: white;
+    color: rgb(128, 38, 38);
+}
+
+.intro_c h1 {
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+}
+
+
+/* @media (max-width: 1615px) {
+    .sidebar {
+        transform: translate(-300px, 0px);
+        position: absolute;
+    }
+} */
